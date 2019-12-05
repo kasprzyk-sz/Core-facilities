@@ -4,85 +4,115 @@ date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
-
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
-
-<section class="embl-grid embl-grid--has-centered-content">
-  <div>
-    <!-- empty -->
-  </div>
-  <div class="vf-content">
-  {% markdown %}
-
-  ## Quickstart
-
-  ```
-
-      yarn create @visual-framework/vf-eleventy your-new-site-name vf-eleventy   
-
-  ```
-
-  This will install a new [`vf-eleventy`](https://github.com/visual-framework/vf-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
-  </div>
-</section>
-
-
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
-
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/vf-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
+    <div>
+        <!-- empty -->
+    </div>
+    <div>
+        <h1 class="vf-intro__heading vf-intro__heading--has-tag">Core facilities <a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+        <p class="vf-lede">Diverse expertise and cutting-edge technologies for life scientists</p>
+        <p class="vf-intro__text">EMBL’s Core Facilities are available to all researchers in the life sciences; you do not have to be employed by EMBL to apply to use the services they provide.</p>
+        <p class="vf-intro__text">High-level support teams at EMBL combine diverse expertise and cutting-edge technologies to tackle specific biological problems. The Facilities enable life-scientists from small research groups to the largest consortia to achieve ambitious research goals in a cost-effective way. </p>
+        <p class="vf-intro__text">At EMBL, the Core Facilities contribute significantly to internal and external training courses and workshops - often in collaboration with industrial partners. This cooperative, multidisciplinary model enhances the efficiency and effectiveness of scientific research at EMBL and beyond. </p>
+    </div>
 </section>
+ <section class="vf-grid | vf-grid__col-4 | vf-u-margin__bottom--xxl | vf-u-margin__top--xxl">
+  <div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Advanced Light Microscopy
+        </h3>
+        <p class="vf-card__text">
+            State-of-the-art light microscopy equipment and image-processing tools
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Chemical Biology
+        </h3>
+        <p class="vf-card__text">
+            Optimising compounds against novel targets for 'biotool' or early drug development
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Electron Microscopy
+        </h3>
+        <p class="vf-card__text">
+            EMBL offers advanced expertise in electron microscopy for diverse biological samples
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Flow Cytometry
+        </h3>
+        <p class="vf-card__text">
+            Dedicated support and adaptive setups for high-end FACS analysis and state-of-the-art cell sorting methods
+        </p>
+    </div>
+</div>
+ </section>
+  <section class="vf-grid | vf-grid__col-4" style="margin-bottom: 150px;">
+  <div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Genomics
+        </h3>
+        <p class="vf-card__text">
+            State-of-the-art technologies for functional genomics analyses
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Metabolomics
+        </h3>
+        <p class="vf-card__text">
+            High-resolution mass spectrometry, liquid chromatography and direct infusion to separate and detect of various classes of small molecule, metabolites and lipids
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Protein Expression and Purification (PEPCORE)
+        </h3>
+        <p class="vf-card__text">
+            Scientific advice and help with experiments on protein expression, purification and biophysical characterisation
+        </p>
+    </div>
+</div>
+<div class="vf-card vf-card--topic">
+    <img src="../../assets/vf-card/assets/vf-card-example.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Proteomics
+        </h3>
+        <p class="vf-card__text">
+            A full proteomics infrastructure for the identification and characterisation of proteins
+        </p>
+    </div>
+</div>
+ </section>
+ <section class="embl-grid embl-grid--has-centered-content">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Jobs at EMBL’s Core Facilities</h1>
+    </div>
+    <div>
+    Job list here
+    </div>
+    </section>
